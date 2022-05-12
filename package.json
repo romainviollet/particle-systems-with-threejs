@@ -1,0 +1,25 @@
+{
+  "name": "particles",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "watchTailwind": "postcss ./assets/css/tailwind.css -o ./assets/css/tailwindCompiled.css --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24",
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "gsap": "^3.10.4",
+    "three": "^0.140.2",
+    "watch": "^1.0.2"
+  },
+  "browserslist": [
+    "last 4 versions"
+  ]
+}
