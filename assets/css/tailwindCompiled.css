@@ -450,9 +450,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .left-0 {
   left: 0px;
 }
-.mx-\[3vw\] {
-  margin-left: 3vw;
-  margin-right: 3vw;
+.mx-\[6vw\] {
+  margin-left: 6vw;
+  margin-right: 6vw;
 }
 .ml-10 {
   margin-left: 2.5rem;
@@ -480,10 +480,10 @@ Ensure the default browser behavior of the `hidden` attribute.
       -ms-flex-align: center;
           align-items: center;
 }
-.justify-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.justify-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .bg-\[\#021a32\] {
   --tw-bg-opacity: 1;
@@ -502,9 +502,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-\[\'Mulish\'\] {
   font-family: 'Mulish';
 }
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .text-xl {
   font-size: 1.25rem;
@@ -535,14 +535,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.before\:scale-x-100::before {
-  content: var(--tw-content);
-  --tw-scale-x: 1;
-  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .before\:border-b::before {
   content: var(--tw-content);
   border-bottom-width: 1px;
@@ -557,4 +549,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .before\:content-\[\'\'\]::before {
   --tw-content: '';
   content: var(--tw-content);
+}
+
+@media (min-width: 640px) {
+
+  .sm\:justify-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
