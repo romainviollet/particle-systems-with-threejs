@@ -68,9 +68,6 @@ scene.add(torus, particlesUniverse);
 const positionArray = new Float32Array(particlesNumber * 3);
 
 for (let i = 0; i < particlesNumber * 3; i++) {
-  // positionArray[i] = Math.random() - 0.5;
-  // positionArray[i] = (Math.random() - 0.5) * 5;
-  // positionArray[i] = (Math.random() - 0.5) * (Math.random() * 5);
   positionArray[i] =
     (Math.random() - 0.5) * (Math.random() * 5) * (Math.random() * 5);
 }
